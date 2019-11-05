@@ -3,6 +3,8 @@ const express = require('express'); // CommonJS modules, and it is equivalent to
 
 const server = express(); // creates server
 
+server.use(express.json());
+
 // request/route handlers to / on localhost:8000
 server.get('/', (req, res) => {
   res.send('Hello Node Man!');
